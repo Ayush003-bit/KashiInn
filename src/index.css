@@ -1,0 +1,108 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap');
+
+@import "tailwindcss";
+ @tailwind utilities;
+
+   @theme{
+       --font-poppins:  "Poppins", sans-serif;
+   }
+ 
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 254 252 248;
+    --foreground: 44 24 16;
+
+    --primary: 212 165 116;
+    --primary-foreground: 255 255 255;
+
+    --secondary: 139 69 19;
+    --secondary-foreground: 255 255 255;
+
+    --accent: 255 140 66;
+    --accent-foreground: 255 255 255;
+
+    --card: 245 241 235;
+    --card-foreground: 44 24 16;
+
+    --muted: 245 241 235;
+    --muted-foreground: 107 78 61;
+
+    --border: 212 165 116 / 0.2;
+    --input: 212 165 116 / 0.2;
+    --ring: 212 165 116;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 26 20 16;
+    --foreground: 254 252 248;
+
+    --card: 44 24 16;
+    --card-foreground: 254 252 248;
+
+    --muted: 61 42 31;
+    --muted-foreground: 212 165 116;
+
+    --border: 212 165 116 / 0.3;
+    --input: 212 165 116 / 0.3;
+  }
+}
+
+
+@layer base {
+  body {
+    @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))];
+    font-family: 'Source Sans 3', sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Crimson Text', serif;
+  }
+
+  button {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+
+@layer utilities {
+  /* Backgrounds */
+  .bg-primary {
+    background-color: rgb(var(--primary));
+  }
+
+  .bg-card {
+    background-color: rgb(var(--card));
+  }
+
+  /* Text */
+  .text-primary {
+    color: rgb(var(--primary));
+  }
+
+  .text-muted {
+    color: rgb(var(--muted-foreground));
+  }
+
+  /* Borders */
+  .border-default {
+    border-color: rgb(var(--border));
+  }
+
+  /* Radius */
+  .rounded-base {
+    border-radius: var(--radius);
+  }
+}
+
+
+
+
