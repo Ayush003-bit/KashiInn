@@ -68,15 +68,6 @@ const Header = () => {
               onClick={handleNavClick}>
 
               
-               <div className="header-logo-container">
-  <div className="header-logo">
-    <img
-      src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1768819954/Brown_Elegant_Hospitality_Logo_wvyhef.png"   // change path if needed
-      alt="Hotel Logo"
-      className="w-8 h-8 object-cover rounded-full transition-transform duration-300 group-hover:scale-110"
-    />
-  </div>
-</div>
               <div className="flex flex-col">
                 <span className="font-headline text-2xl font-semibold text-foreground">KashiInn
 
@@ -198,31 +189,7 @@ const Header = () => {
 
         
       </div>
-      <style jsx>{`
-        .header-logo-container {
-          position: relative;
-          width: 48px;
-          height: 48px;
-          background: linear-gradient(135deg, rgba(212, 165, 116, 0.1), rgba(212, 165, 116, 0.2));
-          border-radius: 12px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-        }
-
-        .header-logo-container:hover {
-          background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(212, 165, 116, 0.3));
-          transform: translateY(-2px);
-          box-shadow: 0 8px 16px rgba(212, 165, 116, 0.2);
-        }
-
-        .header-logo {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-      `}</style>
+    
     </>);
 
 };

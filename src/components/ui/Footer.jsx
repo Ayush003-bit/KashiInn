@@ -48,16 +48,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="footer-logo-container bg-white">
-               <img
-                  src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1768819954/Brown_Elegant_Hospitality_Logo_wvyhef.png" // change path if needed
-                  alt="Hotel Logo"
-                  className="w-8 h-8 object-cover rounded-full transition-transform duration-300 group-hover:scale-110" />
-
-              </div>
+             
               <div className="flex flex-col">
                 <span className="font-headline text-xl font-medium">
-                  HotelKashiInn
+                  KashiInn
                 </span>
                 
 

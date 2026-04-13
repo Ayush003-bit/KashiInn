@@ -3,6 +3,7 @@
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 const CulturalStory = () => {
   const culturalHighlights = [
@@ -26,6 +27,8 @@ const CulturalStory = () => {
     title: "Classical Arts",
     description: "Immerse in traditional music and dance performances"
   }];
+
+  const navigate = useNavigate('');
 
 
   return (
@@ -69,6 +72,7 @@ const CulturalStory = () => {
               size="lg"
               iconName="BookOpen"
               iconPosition="left"
+              onClick={()=> navigate("/about-us")}
               className="bg-amber-800 text-white hover:bg-amber-700 hover:text-white cursor-pointer">
 
               Learn Our Story

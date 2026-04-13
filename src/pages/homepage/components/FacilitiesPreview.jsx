@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 import Button from '../../../components/ui/Button';
+import { useNavigate } from 'react-router-dom';
 
 const FacilitiesPreview = () => {
   const facilities = [
@@ -32,6 +33,8 @@ const FacilitiesPreview = () => {
       description: "Curated artifacts reflecting timeless traditions"
     }
   ];
+
+  const navigate = useNavigate("");
 
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-background">
@@ -89,7 +92,7 @@ const FacilitiesPreview = () => {
                   w-fit text-xs sm:text-sm font-medium
                   group-hover:translate-x-2 transition-all duration-300 cursor-pointer shadow-md">
 
-                  <span>Explore More</span>
+                  <span onClick={()=> navigate('/our-rooms')}>Explore More</span>
                   <Icon name="ArrowRight" size={18} />
                 </div>
 
