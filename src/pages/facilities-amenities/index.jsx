@@ -111,7 +111,7 @@ const FacilitiesAndAmenities = () => {
                   <Icon name="Calendar" size={20} />
                   <span>Book Your Stay</span>
                 </button>
-                <button className="inline-flex items-center justify-center space-x-2 bg-card hover:bg-muted text-foreground px-8 py-4 rounded-lg font-cta text-base font-medium transition-all duration-300 border border-border cursor-pointer"  onClick={() => window.open("tel:8127198888")}>
+                <button className="inline-flex items-center justify-center space-x-2 bg-card hover:bg-muted text-foreground px-8 py-4 rounded-lg font-cta text-base font-medium transition-all duration-300 border border-border cursor-pointer"  onClick={() => window.open("tel:9559536662")}>
                   <Icon name="Phone" size={20} />
                   <span>Call Us Now</span>
                 </button>

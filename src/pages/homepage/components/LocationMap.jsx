@@ -77,7 +77,7 @@ const LocationMap = () => {
                 </div>
               </div>
               <p className="font-poppins text-sm text-foreground leading-relaxed">
-                Parade Kothi Rd, Near Cantt Roadways, Vijay Nagar Colony, Cantt, Varanasi, Uttar Pradesh 221002
+                A36/41 C Bhadau, Rajghat (Near Bhadau Beer Baba Mandir) Varanasi
               </p>
             </div>
 

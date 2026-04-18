@@ -7,34 +7,34 @@ const ContactInfo = () => {
     {
       icon: 'MapPin',
       title: 'Visit Us',
-      primary: 'Parade Kothi Rd, Near Cantt Roadways, Vijay Nagar Colony,',
-      secondary: 'Varanasi, Uttar Pradesh 221001, India',
+      primary: 'A36/41 C Bhadau, Rajghat (Near Bhadau Beer Baba Mandir)',
+      secondary: 'Varanasi, Uttar Pradesh 221002, India',
       action: 'Get Directions',
       link: 'https://maps.google.com'
     },
     {
       icon: 'Phone',
       title: 'Call Us',
-      primary: '+91 81271 98888',
+      primary: '+91 9511119560, 9559536662',
       secondary: 'Available 24/7 for reservations',
       action: 'Call Now',
-      link: 'tel:+91 81271 98888'
+      link: 'tel:+91 9511119560'
     },
     {
       icon: 'Mail',
       title: 'Email Us',
-      primary: 'stay@hotelkashiin.com',
+      primary: 'hotelkashiinnrajghat@gmail.com',
       secondary: 'Response within 2 hours',
       action: 'Send Email',
-      link: 'mailto:stay@hotelkashiin.com'
+      link: 'mailto:hotelkashiinnrajghat@gmail.com'
     },
     {
       icon: 'MessageSquare',
       title: 'WhatsApp',
-      primary: '+91 81271 98888',
+      primary: '+91 9559536662',
       secondary: 'Quick responses via chat',
       action: 'Chat Now',
-      link: 'https://wa.me/9181271 98888'
+      link: 'https://wa.me/919559536662'
     }
   ];
 
@@ -56,7 +56,7 @@ const ContactInfo = () => {
             {contactMethods?.map((method) => (
               <div
                 key={method?.title}
-                className="bg-card rounded-xl p-6 md:p-8 space-y-4 hover:shadow-golden transition-all duration-300 border border-border"
+                className="bg-card rounded-xl p-8 md:p-8 space-y-4 hover:shadow-golden transition-all duration-300 border border-border"
               >
                 <div className="w-12 h-12 md:w-14 md:h-14 bg-amber-600 rounded-lg flex items-center justify-center">
                   <Icon name={method?.icon} size={24} className="text-white md:w-7 md:h-7" />

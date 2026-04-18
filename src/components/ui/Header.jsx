@@ -99,7 +99,7 @@ const Header = () => {
             </nav>
 
             <div className="hidden lg:flex items-center space-x-4">
-              <a href="tel:+91 81271 98888"
+              <a href="tel:+919559536662"
                 variant="outline"
                 size="default"
                 iconName="Phone"
@@ -157,7 +157,7 @@ const Header = () => {
 
           <div className="pt-6 border-t border-border space-y-4">
 
-              <a href="tel:+91 81271 98888"
+              <a href="tel:+919559536662"
                 variant="outline"
                 size="default"
                 iconName="Phone"

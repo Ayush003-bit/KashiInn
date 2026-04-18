@@ -34,7 +34,7 @@ const OurRooms = () => {
     name: "Delux Room",
     image: "https://res.cloudinary.com/ds2nijf5a/image/upload/v1774950995/Images_19_fadhgb.jpg",
     imageAlt: "",
-    price: 8500,
+    price: 3500,
     originalPrice: 10000,
     discount: 15,
     rating: 4.8,
@@ -77,10 +77,10 @@ const OurRooms = () => {
   },
   {
     id: 2,
-    name: "AC Rooms",
+    name: "Family Sweet Room",
     image: "https://res.cloudinary.com/ds2nijf5a/image/upload/v1774951063/Images_21_udfl8s.jpg",
     imageAlt: "",
-    price: 15000,
+    price: 5500,
     originalPrice: 18000,
     discount: 17,
     rating: 4.9,
@@ -129,10 +129,10 @@ const OurRooms = () => {
   },
   {
     id: 3,
-    name: "Platinum Room",
+    name: "Family Room",
     image: "https://res.cloudinary.com/ds2nijf5a/image/upload/v1775817649/Images_37_szvptu.jpg",
     imageAlt: "",
-    price: 6500,
+    price: 4500,
     originalPrice: null,
     discount: null,
     rating: 4.7,
@@ -476,7 +476,7 @@ const OurRooms = () => {
   iconName="Phone"
   iconPosition="left"
   className="bg-amber-700 hover:bg-amber-600 text-white cursor-pointer"
-  onClick={() => window.open("tel:8127198888")}
+  onClick={() => window.open("tel:9511119560")}
 >
   Call Us Now
 </Button>
@@ -489,7 +489,7 @@ const OurRooms = () => {
   iconPosition="left"
   onClick={() =>
     window.open(
-      "https://wa.me/918127198888?text=Hello, I want to enquire about room booking",
+      "https://wa.me/919559536662?text=Hello, I want to enquire about room booking",
       "_blank"
     )
   }

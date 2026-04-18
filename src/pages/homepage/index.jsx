@@ -89,7 +89,7 @@ const Homepage = () => {
                       <span>Book Your Stay</span>
                     </button>
                     <a
-                      href="tel:+91  81271 98888"
+                      href="tel:+919511119560"
                       className="inline-flex items-center justify-center space-x-2 bg-white/10 backdrop-blur-sm text-white text-sm border-2 border-white px-8 py-4 rounded-xl font-poppins font-medium hover:bg-white/20 transition-all duration-300"
                     > 
                       <Icon name="Phone" size={20} />

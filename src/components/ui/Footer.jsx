@@ -2,6 +2,7 @@
   import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../AppIcon';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date()?.getFullYear();
@@ -18,27 +19,26 @@ const Footer = () => {
 
 
   const socialLinks = [
-  { name: 'Facebook', icon: 'Facebook', href: '#' },
-  { name: 'Instagram', icon: 'Instagram', href: '#' },
-  { name: 'Twitter', icon: 'Twitter', href: '#' },
-  { name: 'Youtube', icon: 'Youtube', href: '#' }];
+  { name: 'Facebook', icon: 'Facebook', href: 'https://www.facebook.com/kashi.inn.2025/' },
+  { name: 'Instagram', icon: 'Instagram', href: 'https://www.instagram.com/hotel_kashi_inn_1376/' },
+ ];
 
 
   const contactInfo = [
   {
     icon: 'MapPin',
     title: 'Address',
-    content: 'Parade Kothi Rd, Near Cantt Roadways, Vijay Nagar Colony, Cantt, Varanasi, Uttar Pradesh 221002'
+    content: 'A36/41 C Bhadau, Rajghat (Near Bhadau Beer Baba Mandir), Varanasi'
   },
   {
     icon: 'Phone',
     title: 'Phone',
-    content: '+91 81271 98888'
+    content: '+919511119560, 9559536662'
   },
   {
     icon: 'Mail',
     title: 'Email',
-    content: 'stay@hotelkashiin.com'
+    content: 'hotelkashiinnrajghat@gmail.com'
   }];
 
 
@@ -63,18 +63,19 @@ const Footer = () => {
               spiritual heart of Kashi. Your sanctuary awaits.
             </p>
             <div className="flex space-x-4">
-              {socialLinks?.map((social) =>
-              <a
-                key={social?.name}
-                href={social?.href}
-                className="footer-social-link"
-                aria-label={social?.name}
-                target="_blank"
-                rel="noopener noreferrer">
-
-                  <Icon name={social?.icon} size={20} />
-                </a>
-              )}
+              {socialLinks?.map((social) => (
+  <a
+    key={social?.name}
+    href={social?.href}
+    className="footer-social-link"
+    aria-label={social?.name}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {social?.name === 'Facebook' && <FaFacebookF size={20} />}
+    {social?.name === 'Instagram' && <FaInstagram size={20} />}
+  </a>
+))}
             </div>
           </div>
 
