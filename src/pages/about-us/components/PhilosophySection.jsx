@@ -156,14 +156,28 @@ const PhilosophySection = () => {
         <div className="mt-12 md:mt-16 bg-card rounded-2xl p-8 md:p-12 golden-shadow">
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div className="lg:w-1/3">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto lg:mx-0">
-                <Icon name="Quote" size={48} className="text-primary" />
-              </div>
+               
+              <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto lg:mx-0">
+  
+  {/* Profile Image Container */}
+  <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/20 shadow-lg bg-white">
+    <img
+      src="https://res.cloudinary.com/ds2nijf5a/image/upload/v1776679065/WhatsApp_Image_2026-04-18_at_4.43.18_PM_itctzu.jpg"
+      alt="Profile"
+      className="w-full h-full object-cover"
+    />
+  </div>
+
+  {/* Quote Icon Overlay */}
+  <div className="absolute -bottom-2 -right-2 sm:-bottom-1 sm:-right-1 bg-white rounded-full p-2 shadow-md border border-gray-100">
+    <Icon name="Quote" size={20} className="text-amber-600 sm:w-6 sm:h-6" />
+  </div>
+</div>
             </div>
 
             <div className="lg:w-2/3 text-center lg:text-left">
               <blockquote className="font-accent text-lg md:text-xl lg:text-2xl text-foreground italic leading-relaxed mb-4">
-                "In Kashi, we don't just offer rooms—we offer refuge. We don't just provide service—we share our souls. Every guest who walks through our doors becomes part of our eternal story."
+                "In KashiInn, we don't just offer rooms—we offer refuge. We don't just provide service—we share our souls. Every guest who walks through our doors becomes part of our eternal story."
               </blockquote>
               <div className="flex items-center justify-center lg:justify-start space-x-3">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
@@ -171,7 +185,7 @@ const PhilosophySection = () => {
                 </div>
                 <div>
                   <p className="font-headline text-lg font-semibold text-foreground">
-                    Rajesh Sharma
+                    Satydeep singh
                   </p>
                   <p className="font-body text-sm text-muted-foreground">
                     Founder & Managing Director
