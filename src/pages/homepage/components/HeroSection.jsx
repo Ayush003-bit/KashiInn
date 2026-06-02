@@ -56,7 +56,7 @@ const HeroSection = () => {
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             index === currentSlide ? 'opacity-100 z-10' : 'opacity-0 z-0'
-          }`}
+          }`}    
         >
           <Image
             src={slide.image}

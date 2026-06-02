@@ -32,7 +32,7 @@ const OurRooms = () => {
   {
     id: 1,
     name: "Delux Room",
-    image: "https://res.cloudinary.com/ds2nijf5a/image/upload/v1774950995/Images_19_fadhgb.jpg",
+    image: "https://res.cloudinary.com/ds2nijf5a/image/upload/v1780424418/KashiInn_Room_Image_gqz3j7.jpg",
     imageAlt: "",
     price: 4500,
     originalPrice: 10000,
